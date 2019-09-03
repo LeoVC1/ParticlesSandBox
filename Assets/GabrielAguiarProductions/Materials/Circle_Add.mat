@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Bean1_Add
+  m_Name: Circle_Add
   m_Shader: {fileID: -6465566751694194690, guid: f6cd0d6c3db46d44ab95210b8ea330cf,
     type: 3}
   m_ShaderKeywords: 
@@ -23,7 +23,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_F6121506:
-        m_Texture: {fileID: 2800000, guid: e8ebd57ea72381049b3a500cf857fd74, type: 3}
+        m_Texture: {fileID: 2800000, guid: ef9e2a640101fcc469c898837185d84b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
