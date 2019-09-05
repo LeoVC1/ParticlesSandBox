@@ -1331,6 +1331,36 @@ PrefabInstance:
       propertyPath: SubModule.subEmitters.Array.data[0].emitter
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1490043200343068759, guid: 216130ac4b3404f428e79f16477ac82b,
+        type: 3}
+      propertyPath: InitialModule.startSpeed.maxCurve.m_Curve.Array.data[1].value
+      value: -0.73299706
+      objectReference: {fileID: 0}
+    - target: {fileID: 1490043200343068759, guid: 216130ac4b3404f428e79f16477ac82b,
+        type: 3}
+      propertyPath: InitialModule.startSpeed.minCurve.m_Curve.Array.data[1].value
+      value: -0.6926909
+      objectReference: {fileID: 0}
+    - target: {fileID: 1490043200343068759, guid: 216130ac4b3404f428e79f16477ac82b,
+        type: 3}
+      propertyPath: InitialModule.startSpeed.minCurve.m_Curve.Array.data[0].value
+      value: -0.48614502
+      objectReference: {fileID: 0}
+    - target: {fileID: 1490043200343068759, guid: 216130ac4b3404f428e79f16477ac82b,
+        type: 3}
+      propertyPath: InitialModule.startSpeed.minCurve.m_Curve.Array.data[0].time
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1490043200343068759, guid: 216130ac4b3404f428e79f16477ac82b,
+        type: 3}
+      propertyPath: InitialModule.startSpeed.maxCurve.m_Curve.Array.data[0].value
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1490043200343068759, guid: 216130ac4b3404f428e79f16477ac82b,
+        type: 3}
+      propertyPath: InitialModule.startSpeed.maxCurve.m_Curve.Array.data[1].time
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 216130ac4b3404f428e79f16477ac82b, type: 3}
 --- !u!1001 &5708437558151630196
