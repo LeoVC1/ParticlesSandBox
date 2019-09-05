@@ -14641,7 +14641,7 @@ ParticleSystem:
         m_Curve:
         - serializedVersion: 3
           time: 0
-          value: -0.012659073
+          value: -1
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -14650,7 +14650,7 @@ ParticleSystem:
           outWeight: 0.33333334
         - serializedVersion: 3
           time: 1
-          value: -0.7848301
+          value: -0.73299706
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -14665,7 +14665,7 @@ ParticleSystem:
         m_Curve:
         - serializedVersion: 3
           time: 0
-          value: -0.0063285828
+          value: -0.48614502
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -14674,7 +14674,7 @@ ParticleSystem:
           outWeight: 0.33333334
         - serializedVersion: 3
           time: 1
-          value: -1
+          value: -0.6926909
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -19229,6 +19229,7 @@ GameObject:
   - component: {fileID: 1490043200581915373}
   - component: {fileID: 1490043200581915371}
   - component: {fileID: 1490043200581915372}
+  - component: {fileID: 2031213310}
   m_Layer: 0
   m_Name: Rocks
   m_TagString: Untagged
@@ -24028,6 +24029,20 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &2031213310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490043200581915374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd69f1b4747579b4a8e2cdeebf46dac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dissolveMaterial: {fileID: 0}
+  delayTime: 1.6
 --- !u!1 &1490043200640505267
 GameObject:
   m_ObjectHideFlags: 0

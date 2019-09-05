@@ -377,7 +377,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: -7.784307e-13, z: 6.9e-43, w: 1.61e-43}
+  m_BoundingSphereOverride: {x: 5.88e-42, y: 1e-45, z: 1.39e-43, w: 0.07421875}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -903,6 +903,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: vfx_Sparks_Loop
       objectReference: {fileID: 0}
+    - target: {fileID: 1256779706487418843, guid: b984816b0b02ba7488548d5a63149a8b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1256779706487418842, guid: b984816b0b02ba7488548d5a63149a8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1060,6 +1065,97 @@ Transform:
   - {fileID: 1006997816}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1750653054
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1750653058}
+  - component: {fileID: 1750653057}
+  - component: {fileID: 1750653056}
+  - component: {fileID: 1750653055}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1750653055
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750653054}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1750653056
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750653054}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: bc47283eb24823c478730b03311193e5, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1750653057
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750653054}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1750653058
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750653054}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.6452432, y: 1.9784997, z: -1.7297845}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1934632145
 GameObject:
@@ -1255,7 +1351,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: -8.290109e-13, z: 6.9e-43, w: -8.10903e-13}
+  m_BoundingSphereOverride: {x: 7.3341654e+34, y: 6.850997e+16, z: 8.559424e-39, w: 7.2156034e+22}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -1326,41 +1422,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1490043200581915371, guid: 216130ac4b3404f428e79f16477ac82b,
-        type: 3}
-      propertyPath: SubModule.subEmitters.Array.data[0].emitter
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1490043200343068759, guid: 216130ac4b3404f428e79f16477ac82b,
-        type: 3}
-      propertyPath: InitialModule.startSpeed.maxCurve.m_Curve.Array.data[1].value
-      value: -0.73299706
-      objectReference: {fileID: 0}
-    - target: {fileID: 1490043200343068759, guid: 216130ac4b3404f428e79f16477ac82b,
-        type: 3}
-      propertyPath: InitialModule.startSpeed.minCurve.m_Curve.Array.data[1].value
-      value: -0.6926909
-      objectReference: {fileID: 0}
-    - target: {fileID: 1490043200343068759, guid: 216130ac4b3404f428e79f16477ac82b,
-        type: 3}
-      propertyPath: InitialModule.startSpeed.minCurve.m_Curve.Array.data[0].value
-      value: -0.48614502
-      objectReference: {fileID: 0}
-    - target: {fileID: 1490043200343068759, guid: 216130ac4b3404f428e79f16477ac82b,
-        type: 3}
-      propertyPath: InitialModule.startSpeed.minCurve.m_Curve.Array.data[0].time
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1490043200343068759, guid: 216130ac4b3404f428e79f16477ac82b,
-        type: 3}
-      propertyPath: InitialModule.startSpeed.maxCurve.m_Curve.Array.data[0].value
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1490043200343068759, guid: 216130ac4b3404f428e79f16477ac82b,
-        type: 3}
-      propertyPath: InitialModule.startSpeed.maxCurve.m_Curve.Array.data[1].time
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 216130ac4b3404f428e79f16477ac82b, type: 3}
 --- !u!1001 &5708437558151630196
@@ -1374,6 +1435,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: vfx_AreaOfEffect_Arcane_v1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5708437557071437976, guid: 3368d322848a1ae43b9bce1f119f5588,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5708437557071437977, guid: 3368d322848a1ae43b9bce1f119f5588,
         type: 3}
@@ -1444,6 +1510,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: vfx_Sparks_Hit
       objectReference: {fileID: 0}
+    - target: {fileID: 5182563336384118625, guid: 9be5450ba2cc5b9469cabc9b2a926128,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5182563336384118624, guid: 9be5450ba2cc5b9469cabc9b2a926128,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1513,6 +1584,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: vfx_AreaOfEffect_Nature_v1
       objectReference: {fileID: 0}
+    - target: {fileID: 3484216039894589000, guid: fbe59d5b45a6f8146b178f77d64322b3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3484216039894589001, guid: fbe59d5b45a6f8146b178f77d64322b3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1581,6 +1657,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: vfx_AreaOfEffect_Fire_v1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2490379667052204961, guid: 8c813f633ef708b4094683abd984f8a6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2490379667052204960, guid: 8c813f633ef708b4094683abd984f8a6,
         type: 3}
