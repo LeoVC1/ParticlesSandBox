@@ -34,5 +34,6 @@ Material:
     - Vector1_4926428: 1
     - Vector1_846F83CE: 0.01
     - Vector1_DD492BF9: 15
+    - _Dissolve: -1
     m_Colors:
     - Color_66E046C7: {r: 6.8831816, g: 1.621692, b: 0, a: 0.8392157}
