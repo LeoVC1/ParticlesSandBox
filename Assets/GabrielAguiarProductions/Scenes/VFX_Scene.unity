@@ -377,7 +377,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: NaN, w: 1e-45}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -706,7 +706,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 8400000, guid: f63ac7eb7e2275d44ad3429ebf46a5b6, type: 2}
+  m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 0
@@ -1417,7 +1417,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 1.9821025e+38, z: 5.65e-43, w: 2.4835518e+38}
+  m_BoundingSphereOverride: {x: NaN, y: 21900160, z: 8.41e-43, w: NaN}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -1432,6 +1432,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: vfx_RockExplosion_v1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1490043199212184133, guid: 216130ac4b3404f428e79f16477ac82b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1490043199212184132, guid: 216130ac4b3404f428e79f16477ac82b,
         type: 3}
@@ -1510,12 +1515,12 @@ PrefabInstance:
     - target: {fileID: 4378030681989148043, guid: b11e13241c0ff5d44993d55913017dad,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 1.929
       objectReference: {fileID: 0}
     - target: {fileID: 4378030681989148043, guid: b11e13241c0ff5d44993d55913017dad,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.54
+      value: 9.86
       objectReference: {fileID: 0}
     - target: {fileID: 4378030681989148043, guid: b11e13241c0ff5d44993d55913017dad,
         type: 3}
@@ -1556,10 +1561,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1038143442, guid: b11e13241c0ff5d44993d55913017dad, type: 3}
-      propertyPath: m_Autodestruct
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b11e13241c0ff5d44993d55913017dad, type: 3}
