@@ -1,0 +1,3 @@
+[submodule "ParticlesSandBox/Assets/GameEvents"]
+	path = ParticlesSandBox/Assets/GameEvents
+	url = ../GameEvents
