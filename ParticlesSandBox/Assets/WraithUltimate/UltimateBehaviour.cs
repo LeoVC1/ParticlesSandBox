@@ -9,7 +9,7 @@ public class UltimateBehaviour : MonoBehaviour
     [SerializeField]
     private float maxDistance;
     [SerializeField]
-    private float durationTime;
+    private float deltaThreshold = 1;
     [ReadOnly]
     [SerializeField]
     private float remainingEnergyPercentual;
@@ -86,7 +86,7 @@ public class UltimateBehaviour : MonoBehaviour
         {
             float deltaPosition = Vector3.Distance(myTransformPath.GetLastFrame(), transform.position);
 
-            if (deltaPosition > 0.2f)
+            if (deltaPosition > deltaThreshold)
             {
                 AddPathFrames();
 
@@ -105,34 +105,17 @@ public class UltimateBehaviour : MonoBehaviour
         pathDistance = 0;
 
         definePathCoroutine = null;
-
-        Debug.Log(myTransformPath.frames.Count);
-        Debug.Log(paths[0].frames.Count);
     }
 
-    IEnumerator RunPath()
+    IEnumerator RunPath(bool reversePath)
     {
         isTeleporting.Raise(true);
 
-        for (int i = 0; i < myTransformPath.frames.Count - 1; i++)
+        for (int i = reversePath ? myTransformPath.frames.Count - 1 : 0; reversePath ? i >= 0 : i < myTransformPath.frames.Count; i = reversePath ? i - 1 : i + 1)
         {
             SetPathFrames(i);
-            yield return new WaitForSeconds(durationTime / myTransformPath.frames.Count);
-        }
-
-        isTeleporting.Raise(false);
-
-        runPathCoroutine = null;
-    }
-
-    IEnumerator RunReversePath()
-    {
-        isTeleporting.Raise(true);
-
-        for (int i = myTransformPath.frames.Count - 1; i >= 0; i--)
-        {
-            SetPathFrames(i);
-            yield return new WaitForSeconds(durationTime / myTransformPath.frames.Count);
+            insidePortal = true;
+            yield return null;
         }
 
         isTeleporting.Raise(false);
@@ -151,14 +134,14 @@ public class UltimateBehaviour : MonoBehaviour
         {
             if (runPathCoroutine == null)
             {
-                runPathCoroutine = StartCoroutine(RunPath());
+                runPathCoroutine = StartCoroutine(RunPath(false));
             }
         }
         else if (other.gameObject == exitPortal)
         {
             if (runPathCoroutine == null)
             {
-                runPathCoroutine = StartCoroutine(RunReversePath());
+                runPathCoroutine = StartCoroutine(RunPath(true));
             }
         }
     }
