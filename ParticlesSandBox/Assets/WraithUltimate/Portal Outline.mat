@@ -36,7 +36,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_F6121506:
-        m_Texture: {fileID: 2800000, guid: 27bb26162f29a9d48947b90ae0303cc0, type: 3}
+        m_Texture: {fileID: 2800000, guid: 41b4d4deaa935214e923759228e0f5d5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _AnisotropyMap:
@@ -99,6 +99,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_A0DC3759_Texture_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SpecularColorMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -124,8 +128,22 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_7B1605DB: 1
-    - Vector1_FF8E0B0D: 0.05
+    - Vector1_2A18784F: 2.02
+    - Vector1_4F577327: 0
+    - Vector1_50D41EAB: 1.5
+    - Vector1_512EE362: 0.44
+    - Vector1_62250150: -0.03
+    - Vector1_63BAA57E: 1
+    - Vector1_7119AEA4: 83.74
+    - Vector1_7B1605DB: 12.5
+    - Vector1_7D0141B5: 110.6
+    - Vector1_9521AF97: 1
+    - Vector1_A6087E83: 1
+    - Vector1_A784F3EB: 59.4
+    - Vector1_C742ADA4: 19.3
+    - Vector1_D2EE24F6: 1.68
+    - Vector1_DD86244E: -22.1
+    - Vector1_FF8E0B0D: 0.084
     - _AORemapMax: 1
     - _AORemapMin: 0
     - _ATDistance: 1
@@ -246,12 +264,18 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
+    - Color_171FB20C: {r: 1.877862, g: 1.877862, b: 1.877862, a: 1}
     - Color_6042E0EE: {r: 1, g: 0, b: 0.93721867, a: 1}
+    - Custom1: {r: 0, g: 0, b: 0, a: 0}
     - Vector2_1978D055: {r: 0, g: 0, b: 0, a: 0}
-    - Vector2_36482448: {r: 1, g: 1, b: 0, a: 0}
+    - Vector2_36482448: {r: 0, g: 0, b: 0, a: 0}
+    - Vector2_3E6A69E4: {r: 0.1, g: 0.5, b: 0, a: 0}
+    - Vector2_49EDE8AD: {r: 0.1, g: -0.5, b: 0, a: 0}
+    - Vector2_8421E587: {r: -0.1, g: 0.5, b: 0, a: 0}
+    - Vector2_A04A5476: {r: 0, g: 0, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 2.5915782, g: 0, b: 3.031433, a: 1}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
@@ -259,6 +283,7 @@ Material:
     - _EmissiveColorLDR: {r: 0, g: 0, b: 0, a: 1}
     - _InvPrimScale: {r: 1, g: 1, b: 0, a: 0}
     - _IridescenceThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
+    - _NoiseSpeed: {r: 0, g: 0, b: 0, a: 0}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _ThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
     - _TransmittanceColor: {r: 1, g: 1, b: 1, a: 1}
