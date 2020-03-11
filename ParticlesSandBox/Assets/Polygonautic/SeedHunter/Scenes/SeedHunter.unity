@@ -333,76 +333,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6729795}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8268801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a81bcacc415a1f743bfdf703afc52027, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  active: 1
-  m_AdvancedMode: 0
-  rotation:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-    max: 360
-  skyIntensityMode:
-    m_OverrideState: 0
-    m_Value: 2
-  exposure:
-    m_OverrideState: 0
-    m_Value: 0
-  multiplier:
-    m_OverrideState: 0
-    m_Value: 0.65
-    min: 0
-  upperHemisphereLuxValue:
-    m_OverrideState: 0
-    m_Value: 1
-    min: 0
-  upperHemisphereLuxColor:
-    m_OverrideState: 0
-    m_Value: {x: 0, y: 0, z: 0}
-  desiredLuxValue:
-    m_OverrideState: 0
-    m_Value: 20000
-  updateMode:
-    m_OverrideState: 0
-    m_Value: 0
-  updatePeriod:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-  includeSunInBaking:
-    m_OverrideState: 0
-    m_Value: 0
-  top:
-    m_OverrideState: 0
-    m_Value: {r: 0.10439658, g: 0.10439658, b: 0.3207547, a: 1}
-    hdr: 1
-    showAlpha: 0
-    showEyeDropper: 1
-  middle:
-    m_OverrideState: 0
-    m_Value: {r: 0.3, g: 0.7, b: 1, a: 1}
-    hdr: 1
-    showAlpha: 0
-    showEyeDropper: 1
-  bottom:
-    m_OverrideState: 0
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
-    hdr: 1
-    showAlpha: 0
-    showEyeDropper: 1
-  gradientDiffusion:
-    m_OverrideState: 0
-    m_Value: 0.5
 --- !u!1 &11072817
 GameObject:
   m_ObjectHideFlags: 0
@@ -7600,7 +7530,7 @@ Transform:
   m_GameObject: {fileID: 190812059}
   m_LocalRotation: {x: 0.8870109, y: 0.00000007963185, z: 0.00000007963185, w: 0.46174863}
   m_LocalPosition: {x: -7.76, y: 20.683, z: 8.283}
-  m_LocalScale: {x: 1.8, y: 3.9000907, z: 0.01}
+  m_LocalScale: {x: 1.8, y: 3.9000916, z: 0.01}
   m_Children: []
   m_Father: {fileID: 1905176715}
   m_RootOrder: 5
@@ -7620,7 +7550,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 190812059}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -7684,7 +7614,7 @@ MonoBehaviour:
   m_AffectSpecular: 1
   m_NonLightmappedOnly: 0
   m_ShapeWidth: 1.8
-  m_ShapeHeight: 3.9000907
+  m_ShapeHeight: 3.9000916
   m_AspectRatio: 1
   m_ShapeRadius: 0
   m_SoftnessScale: 1
@@ -7770,7 +7700,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 9.068449
+  m_Intensity: 9.068447
   m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -7811,7 +7741,7 @@ Light:
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 2
-  m_AreaSize: {x: 1.8, y: 3.9000907}
+  m_AreaSize: {x: 1.8, y: 3.9000916}
   m_BounceIntensity: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
@@ -9725,7 +9655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistance: 50
-  deltaThreshold: 1
+  deltaThreshold: 0.9
   remainingEnergyPercentual: 0
   isTeleporting: {fileID: 11400000, guid: 88c63cf1b62a9594e94fe0486ac02fa7, type: 2}
   observedTrasforms:
@@ -17869,7 +17799,7 @@ Transform:
   m_GameObject: {fileID: 539253612}
   m_LocalRotation: {x: 0.8870109, y: 0.00000007963185, z: 0.00000007963185, w: 0.46174863}
   m_LocalPosition: {x: -12.255, y: 20.683, z: 8.283}
-  m_LocalScale: {x: 1.8, y: 3.9000888, z: 0.01}
+  m_LocalScale: {x: 1.8, y: 3.9000897, z: 0.01}
   m_Children: []
   m_Father: {fileID: 1905176715}
   m_RootOrder: 4
@@ -17889,7 +17819,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 539253612}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -17953,7 +17883,7 @@ MonoBehaviour:
   m_AffectSpecular: 1
   m_NonLightmappedOnly: 0
   m_ShapeWidth: 1.8
-  m_ShapeHeight: 3.9000888
+  m_ShapeHeight: 3.9000897
   m_AspectRatio: 1
   m_ShapeRadius: 0
   m_SoftnessScale: 1
@@ -18039,7 +17969,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 9.068454
+  m_Intensity: 9.068451
   m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -18080,7 +18010,7 @@ Light:
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 2
-  m_AreaSize: {x: 1.8, y: 3.9000888}
+  m_AreaSize: {x: 1.8, y: 3.9000897}
   m_BounceIntensity: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
@@ -18493,7 +18423,7 @@ Transform:
   m_GameObject: {fileID: 551228968}
   m_LocalRotation: {x: 0.8870109, y: 0.00000007963185, z: 0.00000007963185, w: 0.46174863}
   m_LocalPosition: {x: -2.26, y: 20.683, z: 8.283}
-  m_LocalScale: {x: 1.8, y: 3.9000907, z: 0.01}
+  m_LocalScale: {x: 1.8, y: 3.9000916, z: 0.01}
   m_Children: []
   m_Father: {fileID: 1905176715}
   m_RootOrder: 6
@@ -18513,7 +18443,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 551228968}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -18577,7 +18507,7 @@ MonoBehaviour:
   m_AffectSpecular: 1
   m_NonLightmappedOnly: 0
   m_ShapeWidth: 1.8
-  m_ShapeHeight: 3.9000907
+  m_ShapeHeight: 3.9000916
   m_AspectRatio: 1
   m_ShapeRadius: 0
   m_SoftnessScale: 1
@@ -18663,7 +18593,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 9.068449
+  m_Intensity: 9.068447
   m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -18704,7 +18634,7 @@ Light:
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 2
-  m_AreaSize: {x: 1.8, y: 3.9000907}
+  m_AreaSize: {x: 1.8, y: 3.9000916}
   m_BounceIntensity: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
@@ -23739,7 +23669,7 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissiveColor: {r: 9.068449, g: 8.203876, b: 6.098017, a: 9.068449}
+    - _EmissiveColor: {r: 9.068447, g: 8.203874, b: 6.098016, a: 9.068447}
     - _EmissiveColorLDR: {r: 0, g: 0, b: 0, a: 1}
     - _UnlitColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1001 &750215199
@@ -26649,7 +26579,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &838143578
 Transform:
   m_ObjectHideFlags: 0
@@ -31460,6 +31390,76 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1017932282}
   m_Mesh: {fileID: 4300000, guid: 6911430a00094464db0dc84ba25f4263, type: 3}
+--- !u!114 &1020764956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a81bcacc415a1f743bfdf703afc52027, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  rotation:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 360
+  skyIntensityMode:
+    m_OverrideState: 0
+    m_Value: 2
+  exposure:
+    m_OverrideState: 0
+    m_Value: 0
+  multiplier:
+    m_OverrideState: 0
+    m_Value: 0.65
+    min: 0
+  upperHemisphereLuxValue:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+  upperHemisphereLuxColor:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0}
+  desiredLuxValue:
+    m_OverrideState: 0
+    m_Value: 20000
+  updateMode:
+    m_OverrideState: 0
+    m_Value: 0
+  updatePeriod:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+  includeSunInBaking:
+    m_OverrideState: 0
+    m_Value: 0
+  top:
+    m_OverrideState: 0
+    m_Value: {r: 0.10439658, g: 0.10439658, b: 0.3207547, a: 1}
+    hdr: 1
+    showAlpha: 0
+    showEyeDropper: 1
+  middle:
+    m_OverrideState: 0
+    m_Value: {r: 0.3, g: 0.7, b: 1, a: 1}
+    hdr: 1
+    showAlpha: 0
+    showEyeDropper: 1
+  bottom:
+    m_OverrideState: 0
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+    hdr: 1
+    showAlpha: 0
+    showEyeDropper: 1
+  gradientDiffusion:
+    m_OverrideState: 0
+    m_Value: 0.5
 --- !u!1001 &1022005220
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53795,7 +53795,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Profile: {fileID: 11400000, guid: ea21aa92ea7cbd340aca94e9466c6420, type: 2}
   m_StaticLightingSkyUniqueID: 3
-  m_SkySettings: {fileID: 8268801}
+  m_SkySettings: {fileID: 1020764956}
   m_SkySettingsFromProfile: {fileID: 6175356833534189529, guid: ea21aa92ea7cbd340aca94e9466c6420,
     type: 2}
 --- !u!114 &1707346006
@@ -55752,7 +55752,7 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissiveColor: {r: 9.068454, g: 8.203879, b: 6.09802, a: 9.068454}
+    - _EmissiveColor: {r: 9.068451, g: 8.203877, b: 6.098018, a: 9.068451}
     - _EmissiveColorLDR: {r: 0, g: 0, b: 0, a: 1}
     - _UnlitColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1001 &1758024730
@@ -58165,7 +58165,7 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissiveColor: {r: 9.068449, g: 8.203876, b: 6.098017, a: 9.068449}
+    - _EmissiveColor: {r: 9.068447, g: 8.203874, b: 6.098016, a: 9.068447}
     - _EmissiveColorLDR: {r: 0, g: 0, b: 0, a: 1}
     - _UnlitColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1001 &1851568037
