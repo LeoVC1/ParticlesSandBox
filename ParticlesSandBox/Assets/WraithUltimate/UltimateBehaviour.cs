@@ -96,6 +96,8 @@ public class UltimateBehaviour : MonoBehaviour
                 remainingEnergyPercentual = Mathf.Clamp(remainingEnergyPercentual, 0, 100); //Display remaining energy as percentual
             }
 
+            insidePortal = true;
+
             yield return null;
         }
 

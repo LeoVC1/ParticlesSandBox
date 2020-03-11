@@ -23,7 +23,7 @@ Material:
   m_Name: Portal Outline
   m_Shader: {fileID: -6465566751694194690, guid: bc496f9c87f5471449efec9f2c3ce8ec,
     type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: _ALPHATEST_ON _DISABLE_SSR
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -32,9 +32,18 @@ Material:
     MotionVector: User
   disabledShaderPasses:
   - MOTIONVECTORS
+  - TransparentBackface
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_7FBA68F8:
+        m_Texture: {fileID: 2800000, guid: 65aa6bb32ac2561488994befdd8cb2eb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_DB596315:
+        m_Texture: {fileID: 2800000, guid: 3462f2c19e357ab4ea3456fca42abc5e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - Texture2D_F6121506:
         m_Texture: {fileID: 2800000, guid: 41b4d4deaa935214e923759228e0f5d5, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -84,7 +93,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 9866a92691696b346901281f2b329034, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskMap:
@@ -130,27 +139,33 @@ Material:
     m_Floats:
     - Vector1_2A18784F: 2.02
     - Vector1_4F577327: 0
+    - Vector1_50790B15: 1
     - Vector1_50D41EAB: 1.5
     - Vector1_512EE362: 0.44
     - Vector1_62250150: -0.03
     - Vector1_63BAA57E: 1
+    - Vector1_6C9DDB5D: 0.1
     - Vector1_7119AEA4: 83.74
-    - Vector1_7B1605DB: 12.5
+    - Vector1_7B1605DB: 30
     - Vector1_7D0141B5: 110.6
+    - Vector1_8F0FC0B2: 0.1
     - Vector1_9521AF97: 1
     - Vector1_A6087E83: 1
+    - Vector1_A66534E0: 0.1
     - Vector1_A784F3EB: 59.4
+    - Vector1_BBEB06E6: 0.2
+    - Vector1_C38716D4: 1
     - Vector1_C742ADA4: 19.3
     - Vector1_D2EE24F6: 1.68
     - Vector1_DD86244E: -22.1
-    - Vector1_FF8E0B0D: 0.084
+    - Vector1_FF8E0B0D: 0.154
     - _AORemapMax: 1
     - _AORemapMin: 0
     - _ATDistance: 1
     - _AddPrecomputedVelocity: 0
     - _AlbedoAffectEmissive: 0
     - _AlphaCutoff: 0.5
-    - _AlphaCutoffEnable: 0
+    - _AlphaCutoffEnable: 1
     - _AlphaCutoffPostpass: 0.5
     - _AlphaCutoffPrepass: 0.5
     - _AlphaCutoffShadow: 0.5
@@ -220,8 +235,10 @@ Material:
     - _PPDMinSamples: 5
     - _PPDPrimitiveLength: 1
     - _PPDPrimitiveWidth: 1
-    - _ReceivesSSR: 1
+    - _ReceivesSSR: 0
     - _RefractionModel: 0
+    - _RenderQueueType: 1
+    - _RequireSplitLighting: 1
     - _SSRefractionProjectionModel: 0
     - _Smoothness: 0.5
     - _SmoothnessRemapMax: 1
@@ -230,16 +247,16 @@ Material:
     - _SpecularAAThreshold: 0.2
     - _SpecularOcclusionMode: 1
     - _SrcBlend: 1
-    - _StencilRef: 2
-    - _StencilRefDepth: 0
+    - _StencilRef: 1
+    - _StencilRefDepth: 32
     - _StencilRefDistortionVec: 64
-    - _StencilRefGBuffer: 2
-    - _StencilRefMV: 128
+    - _StencilRefGBuffer: 33
+    - _StencilRefMV: 160
     - _StencilWriteMask: 3
-    - _StencilWriteMaskDepth: 32
+    - _StencilWriteMaskDepth: 48
     - _StencilWriteMaskDistortionVec: 64
-    - _StencilWriteMaskGBuffer: 3
-    - _StencilWriteMaskMV: 128
+    - _StencilWriteMaskGBuffer: 51
+    - _StencilWriteMaskMV: 176
     - _SubsurfaceMask: 1
     - _SupportDecals: 1
     - _SurfaceType: 0
@@ -257,18 +274,19 @@ Material:
     - _UVDetail: 0
     - _UVEmissive: 0
     - _UseEmissiveIntensity: 0
-    - _UseShadowThreshold: 0
-    - _ZTestDepthEqualForOpaque: 4
-    - _ZTestGBuffer: 4
+    - _UseShadowThreshold: 1
+    - _ZTestDepthEqualForOpaque: 3
+    - _ZTestGBuffer: 3
     - _ZTestModeDistortion: 8
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
     - Color_171FB20C: {r: 1.877862, g: 1.877862, b: 1.877862, a: 1}
-    - Color_6042E0EE: {r: 1, g: 0, b: 0.93721867, a: 1}
+    - Color_6042E0EE: {r: 4, g: 4, b: 4, a: 1}
     - Custom1: {r: 0, g: 0, b: 0, a: 0}
     - Vector2_1978D055: {r: 0, g: 0, b: 0, a: 0}
     - Vector2_36482448: {r: 0, g: 0, b: 0, a: 0}
+    - Vector2_3E1D548A: {r: 2, g: 0, b: 0, a: 0}
     - Vector2_3E6A69E4: {r: 0.1, g: 0.5, b: 0, a: 0}
     - Vector2_49EDE8AD: {r: 0.1, g: -0.5, b: 0, a: 0}
     - Vector2_8421E587: {r: -0.1, g: 0.5, b: 0, a: 0}
