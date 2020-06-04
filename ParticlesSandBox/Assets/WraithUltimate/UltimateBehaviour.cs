@@ -24,8 +24,8 @@ public class UltimateBehaviour : MonoBehaviour
     //Paths controllers
     [SerializeField]
     private List<Transform> observedTrasforms = new List<Transform>();
-    private Path myTransformPath;
-    private List<Path> paths = new List<Path>();
+    private WraithPath myTransformPath;
+    private List<WraithPath> paths = new List<WraithPath>();
 
     //Coroutines
     private Coroutine definePathCoroutine;
@@ -40,11 +40,11 @@ public class UltimateBehaviour : MonoBehaviour
 
     private void Start()
     {
-        myTransformPath = new Path(transform);
+        myTransformPath = new WraithPath(transform);
 
         foreach (Transform t in observedTrasforms)
         {
-            paths.Add(new Path(t));
+            paths.Add(new WraithPath(t));
         }
     }
 
@@ -62,7 +62,7 @@ public class UltimateBehaviour : MonoBehaviour
     {
         myTransformPath.AddFrame();
 
-        foreach (Path path in paths)
+        foreach (WraithPath path in paths)
         {
             path.AddFrame();
         }
@@ -72,7 +72,7 @@ public class UltimateBehaviour : MonoBehaviour
     {
         myTransformPath.SetFrame(pathIndex);
 
-        foreach (Path path in paths)
+        foreach (WraithPath path in paths)
         {
             path.SetFrame(pathIndex);
         }

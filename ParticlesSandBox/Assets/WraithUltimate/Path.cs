@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Path
+public class WraithPath
 {
     private Transform observedTransform;
     public List<Vector3> frames = new List<Vector3>();
 
-    public Path (Transform observedTransform)
+    public WraithPath (Transform observedTransform)
     {
         this.observedTransform = observedTransform;
     }
