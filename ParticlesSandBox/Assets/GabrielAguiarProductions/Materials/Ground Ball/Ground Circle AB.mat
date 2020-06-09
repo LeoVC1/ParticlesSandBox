@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Ground Circle AB
+  m_Shader: {fileID: -6465566751694194690, guid: a8a4bdd332e711948826d2de8312c4bb,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap:
+    MotionVector: User
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_24772312:
+        m_Texture: {fileID: 2800000, guid: 51ff38c974c15ff47a6de16f06ed1597, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_859747C2:
+        m_Texture: {fileID: 2800000, guid: 827c9cd4a3943534f909ac6473e17288, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_F6121506:
+        m_Texture: {fileID: 2800000, guid: ef9e2a640101fcc469c898837185d84b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_380D9A3E: -0.54
+    - Vector1_50D41EAB: 0.3
+    - Vector1_5AAA6AB0: 1
+    - Vector1_62250150: 1
+    - Vector1_6AAF9FAE: 0
+    - Vector1_7B1605DB: 10
+    - Vector1_846F83CE: 0.01
+    - Vector1_9521AF97: 1
+    - Vector1_A784F3EB: 60.5
+    - Vector1_B8F4140D: 1.72
+    - Vector1_BB1DB786: 0
+    - Vector1_C208236C: -35.9
+    - Vector1_D2EE24F6: 14.9
+    - Vector1_D4F9C985: 1.1
+    - Vector1_DD492BF9: 30
+    - Vector1_FF8E0B0D: 0.045
+    - _Dissolve: -0.33
+    m_Colors:
+    - Color_171FB20C: {r: 141.07869, g: 0, b: 168.89702, a: 1}
+    - Color_6042E0EE: {r: 1, g: 1, b: 1, a: 1}
+    - Color_66E046C7: {r: 1, g: 1, b: 1, a: 1}
+    - Color_D379BD6A: {r: 0.27844715, g: 0, b: 1, a: 1}
+    - Vector2_1978D055: {r: 0, g: 0, b: 0, a: 0}
+    - Vector2_36482448: {r: -0.1, g: -0.2, b: 0, a: 0}
+    - Vector2_49EDE8AD: {r: 0.1, g: -0.3, b: 0, a: 0}
+    - Vector2_8421E587: {r: -0.1, g: -0.6, b: 0, a: 0}
+    - Vector2_952042E: {r: 0, g: 0, b: 0, a: 0}
+    - Vector2_F093B8E5: {r: 1, g: 1, b: 0, a: 0}
