@@ -24837,7 +24837,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1320685286
 Transform:
   m_ObjectHideFlags: 0
@@ -40283,6 +40283,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: vfx_EnergyOrb_v1_Arcane
       objectReference: {fileID: 0}
+    - target: {fileID: 6024888279827159706, guid: fb213fbfbd3e0fb4793e163c87c8a31f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6024888279827159709, guid: fb213fbfbd3e0fb4793e163c87c8a31f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -40353,6 +40358,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1886145200}
     m_Modifications:
+    - target: {fileID: 5182563335486321667, guid: 9be5450ba2cc5b9469cabc9b2a926128,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5182563336384118624, guid: 9be5450ba2cc5b9469cabc9b2a926128,
         type: 3}
       propertyPath: m_LocalPosition.x
